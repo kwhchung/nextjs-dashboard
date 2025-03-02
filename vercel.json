@@ -1,0 +1,10 @@
+{
+  "build": {
+    "installCommand": [
+      "pnpm install",
+      "pnpm add node-pre-gyp --save-dev",
+      "cd node_modules/bcrypt",
+      "node-pre-gyp install --fallback-to-build"
+    ]
+  }
+}
