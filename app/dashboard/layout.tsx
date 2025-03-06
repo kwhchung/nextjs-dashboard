@@ -1,4 +1,7 @@
 import SideNav from "@/app/ui/dashboard/sidenav";
+import { Metadata } from "next";
+
+export const experimantal_ppr = true;
 
 const Layout = ({
   children
@@ -14,3 +17,7 @@ const Layout = ({
 );
 
 export default Layout;
+
+export const metadata: Metadata = {
+  title: "Dashboard",
+};
