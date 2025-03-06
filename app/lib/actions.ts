@@ -77,7 +77,7 @@ export const createInvoice = async (
       INSERT INTO invoices (customer_id, amount, status, date)
       VALUES (${ customerId }, ${ amountInCents }, ${ status }, ${ date });
     `;
-  }catch(error){
+  }catch{
     return {
       message: "Database Error: Failed to Create Invoice.",
     };
